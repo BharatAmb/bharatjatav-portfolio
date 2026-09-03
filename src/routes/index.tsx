@@ -144,9 +144,17 @@ function Hero() {
         </motion.div>
 
         <motion.div
-          aria-hidden initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1.2, delay: 0.3 }}
-          className="absolute -top-10 right-0 size-72 sm:size-96 rounded-full bg-gradient-primary blur-3xl opacity-20 -z-10"
-        />
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 1.2, delay: 0.3 }}
+  className="absolute top-5 right-0 size-72 sm:size-96 z-10"
+>
+  <img
+    src="/AiBoy.png"
+    alt="AI Boy"
+    className="w-full h-full object-contain"
+  />
+</motion.div>
       </div>
     </section>
   );
